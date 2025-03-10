@@ -31,7 +31,7 @@ public class MariaDbConnection {
             // connect if necessary
             try {
                 conn = DriverManager.getConnection(
-                        "jdbc:mariadb://localhost:3306/currency?user=root&password=root");
+                        "jdbc:mariadb://localhost:3306/currency2?user=appuser2&password=password");
             } catch (SQLException e) {
                 System.out.println("Connection failed.");
                 e.printStackTrace();

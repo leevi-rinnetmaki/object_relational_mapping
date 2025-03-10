@@ -2,6 +2,7 @@ package task7_3.dao;
 
 import task7_3.datasource.MariaDbConnection;
 import task7_3.entity.CurrencyModel;
+import task7_3.entity.TransactionModel;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -51,10 +52,13 @@ public class CurrencyDao {
         EntityManager em = MariaDbConnection.getInstance();
         em.getTransaction().begin();
         em.persist(newCurrency);
+        //em.persist(new TransactionModel(4));
         em.getTransaction().commit();
         //System.out.println("DAOISM");
         //System.out.println(newCurrency.getAbbreviation());
     }
+
+
 
     public void test(){
         //Connection conn = MariaDbConnection.getConnection();

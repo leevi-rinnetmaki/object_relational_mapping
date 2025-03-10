@@ -9,6 +9,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import task7_3.controller.CurrencyController;
 import task7_3.dao.CurrencyDao;
+import task7_3.dao.TransactionDao;
 import task7_3.entity.CurrencyModel;
 
 public class CurrencyView extends Application {
@@ -143,7 +144,7 @@ public class CurrencyView extends Application {
     }
 
     public void init(){
-        this.controller = new CurrencyController(this, new CurrencyDao());
+        this.controller = new CurrencyController(this, new CurrencyDao(), new TransactionDao());
     }
 
     public String getValue(){
@@ -158,6 +159,14 @@ public class CurrencyView extends Application {
     public Object radioRight(){
         toggleGroupRight.getSelectedToggle().getUserData();
         return ((RadioButton) toggleGroupRight.getSelectedToggle()).getUserData();
+    }
+
+    public String radioLeftString(){
+        return ((RadioButton)toggleGroupLeft.getSelectedToggle()).getText();
+    }
+
+    public String radioRightString(){
+        return ((RadioButton)toggleGroupRight.getSelectedToggle()).getText();
     }
 
     public void setCOnverted(String value){
