@@ -1,8 +1,8 @@
-package task7_3.dao;
+package task7_4.dao;
 
 import jakarta.persistence.EntityManager;
-import task7_3.datasource.MariaDbConnection;
-import task7_3.entity.TransactionModel;
+import task7_4.datasource.MariaDbConnection;
+import task7_4.entity.TransactionModel;
 
 public class TransactionDao {
     public void addTransaction(TransactionModel newTransaction) {

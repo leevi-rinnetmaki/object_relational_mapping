@@ -1,8 +1,7 @@
-package task7_3.dao;
+package task7_4.dao;
 
-import task7_3.datasource.MariaDbConnection;
-import task7_3.entity.CurrencyModel;
-import task7_3.entity.TransactionModel;
+import task7_4.datasource.MariaDbConnection;
+import task7_4.entity.CurrencyModel;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -11,8 +10,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import task7_3.entity.*;
-import task7_3.datasource.*;
 import jakarta.persistence.EntityManager;
 
 public class CurrencyDao {

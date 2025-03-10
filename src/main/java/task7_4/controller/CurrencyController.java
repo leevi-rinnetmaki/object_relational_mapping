@@ -1,10 +1,10 @@
-package task7_3.controller;
+package task7_4.controller;
 
-import task7_3.dao.CurrencyDao;
-import task7_3.dao.TransactionDao;
-import task7_3.entity.CurrencyModel;
-import task7_3.view.CurrencyView;
-import task7_3.entity.TransactionModel;
+import task7_4.dao.CurrencyDao;
+import task7_4.dao.TransactionDao;
+import task7_4.entity.CurrencyModel;
+import task7_4.view.CurrencyView;
+import task7_4.entity.TransactionModel;
 
 import java.util.List;
 

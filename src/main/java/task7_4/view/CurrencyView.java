@@ -1,4 +1,4 @@
-package task7_3.view;
+package task7_4.view;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -7,10 +7,10 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import task7_3.controller.CurrencyController;
-import task7_3.dao.CurrencyDao;
-import task7_3.dao.TransactionDao;
-import task7_3.entity.CurrencyModel;
+import task7_4.controller.CurrencyController;
+import task7_4.dao.CurrencyDao;
+import task7_4.dao.TransactionDao;
+import task7_4.entity.CurrencyModel;
 
 public class CurrencyView extends Application {
 

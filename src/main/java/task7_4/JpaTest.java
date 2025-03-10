@@ -1,4 +1,4 @@
-package task7_3;
+package task7_4;
 import jakarta.persistence.*;
 
 
